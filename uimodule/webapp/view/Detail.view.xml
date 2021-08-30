@@ -1,4 +1,4 @@
-<mvc:View controllerName="com.te.pollutionTracker.controller.Master"
+<mvc:View controllerName="com.te.pollutionTracker.controller.Detail"
   xmlns="sap.m"
   xmlns:f="sap.f"
   xmlns:mvc="sap.ui.core.mvc">
@@ -7,7 +7,7 @@
     <f:title>
       <f:DynamicPageTitle>
         <f:heading>
-          <Title text="Countries Wise Pollution"/>
+          <Title text="States Wise Pollution"/>
         </f:heading>
       </f:DynamicPageTitle>
     </f:title>
@@ -17,7 +17,7 @@
         <Table id="countriesPollutionTable" inset="false" items="{countries>/}" class="sapFDynamicPageAlignContent" width="auto">
           <columns>
             <Column width="12em">
-              <Text text="Country" />
+              <Text text="State" />
             </Column>
             <Column hAlign="End">
               <Text text="AQI" />
