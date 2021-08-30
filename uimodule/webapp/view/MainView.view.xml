@@ -1,10 +1,12 @@
- <mvc:View controllerName="com.te.pollutionTracker.controller.MainView"
-  displayBlock="true"
-  xmlns="sap.f"
+<mvc:View controllerName="com.te.pollutionTracker.controller.MainView" displayBlock="true"
+  xmlns="sap.m"
+  xmlns:f="sap.f"
   xmlns:mvc="sap.ui.core.mvc">
-  <FlexibleColumnLayout id="pollution">
-  <beginColumnPages>
-  <mvc:XMLView id="beginView" viewName="com.te.pollutionTracker.view.Master"></mvc:XMLView>
-  </beginColumnPages>
-  </FlexibleColumnLayout>
+  <App>
+    <f:FlexibleColumnLayout id="pollution">
+      <f:beginColumnPages>
+        <mvc:XMLView id="beginView" viewName="com.te.pollutionTracker.view.Master"></mvc:XMLView>
+      </f:beginColumnPages>
+    </f:FlexibleColumnLayout>
+  </App>
 </mvc:View>
