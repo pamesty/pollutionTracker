@@ -39,7 +39,8 @@
             "libs": {
                 "sap.ui.core": {},
                 "sap.m": {},
-                "sap.ui.layout": {}
+                "sap.ui.layout": {},
+                "sap.f": {}
             }
         },
         "contentDensities": {
@@ -84,6 +85,15 @@
                         "master",
                         "detail"
                     ]
+                },
+                {
+                    "pattern": "detail/{country}/state/{state}/{layout}",
+                    "name": "city",
+                    "target": [
+                        "master",
+                        "detail",
+                        "city"
+                    ]
                 }
             ],
             "targets": {
@@ -94,7 +104,12 @@
                 "detail": {
                     "viewName": "Detail",
                     "controlAggregation": "midColumnPages"
+                },
+                "city": {
+                    "viewName": "City",
+                    "controlAggregation": "endColumnPages"
                 }
+
             }
         }
     }

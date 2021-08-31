@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="com.te.pollutionTracker.controller.Detail"
+	controllerName="com.te.pollutionTracker.controller.City"
 	xmlns="sap.m"
 	xmlns:f="sap.f"
 	xmlns:mvc="sap.ui.core.mvc">
@@ -8,7 +8,7 @@
 		<f:title>
 			<f:DynamicPageTitle>
 				<f:heading>
-					<Title text="State Wise Pollution"/>
+					<Title text="City Wise Pollution"/>
 				</f:heading>
 			</f:DynamicPageTitle>
 		</f:title>
@@ -17,25 +17,25 @@
 		<f:content>
 			<VBox fitContainer="true">
 			 	<Table
-					id="statesPollutionTable"
+					id="cityPollutionTable"
 					inset="false"
-					items="{states>/}"
+					items="{cities>/}"
 					class="sapFDynamicPageAlignContent"
 					width="auto">
 					<columns>
 						<Column width="12em">
-							<Text text="State"/>
+							<Text text="City"/>
 						</Column>
 						<Column	hAlign="End">
 							<Text text="AQI"/>
 						</Column>
 					</columns>
 					<items>
-						<ColumnListItem type="Navigation" press="onStatePress">
+						<ColumnListItem type="Navigation">
 							<cells>
-								<ObjectIdentifier title="{states>state}" text="{states>AQI}"/>
+								<ObjectIdentifier title="{cities>state}" text="{cities>AQI}"/>
 								<ObjectNumber
-									number="{states>AQI}"
+									number="{cities>AQI}"
 									/>
 							</cells>
 						</ColumnListItem>
